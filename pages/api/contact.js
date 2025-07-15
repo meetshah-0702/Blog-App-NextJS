@@ -21,7 +21,9 @@ async function handler(req, res) {
 
         let client;
 
-        const connectionString = `mongodb://127.0.0.1:27017/${process.env.mongodb_database}`;
+        const connectionString = `mongodb+srv://root:manager@cluster0.2cokqwg.mongodb.net/${process.env.mongodb_database}`;
+
+        console.log('connect', connectionString);
 
         try {
             client = await MongoClient.connect(connectionString);
