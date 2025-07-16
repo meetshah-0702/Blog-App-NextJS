@@ -4,14 +4,14 @@ module.exports = (phase) => {
     if (phase == PHASE_DEVELOPMENT_SERVER) {
         return {
             env: {
-                MONGO_URI: `mongodb+srv://root:manager@cluster0.2cokqwg.mongodb.net/blog-app-dev`
+                MONGO_URI: `mongodb+srv://meetushah999:manager@cluster0.0zelf.mongodb.net/blog-app-dev`
             }
         };
     }
 
     return {
         env: {
-            MONGO_URI: `mongodb+srv://root:manager@cluster0.2cokqwg.mongodb.net/blogs-app`
+            MONGO_URI: `mongodb+srv://meetushah999:manager@cluster0.0zelf.mongodb.net/blog-app`
         }
     };
 };

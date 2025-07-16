@@ -21,6 +21,7 @@ async function handler(req, res) {
 
         let client;
 
+        console.log(process.env.MONGO_URI);
         try {
             client = await MongoClient.connect(process.env.MONGO_URI);
         } catch (error) {
