@@ -4,6 +4,7 @@ module.exports = (phase) => {
     if (phase == PHASE_DEVELOPMENT_SERVER) {
         return {
             env: {
+                MONGO_URI: `mongodb+srv://root:manager@cluster0.2cokqwg.mongodb.net/${process.env.mongodb_database}`,
                 mongodb_database: 'blog-app-dev'
             }
         };
@@ -11,6 +12,7 @@ module.exports = (phase) => {
 
     return {
         env: {
+            MONGO_URI: `mongodb+srv://root:manager@cluster0.2cokqwg.mongodb.net/${process.env.mongodb_database}`,
             mongodb_database: 'blog-app'
         }
     };
